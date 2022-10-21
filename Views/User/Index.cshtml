@@ -1,0 +1,64 @@
+@{
+    ViewData["Title"] = "Contact List";
+}
+
+<div class="text-center">
+
+    <div class="d-grip gap-Z d-md-flex justify-contente-md-start">
+        <a class="btn btn-primary" role="button"asp-controller="User" asp-action="Create">Adicionar Usuario</a>
+    </div>
+
+<h1 class="display-4">Lista de Usuários</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">CPF</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Otto</td>
+      <td>otto@gmail.com</td>
+      <td>111.111.111-11</td>
+      <td>
+        <div class="btn-group" role="group">
+            <a role="button" class="btn btn-primary" asp-controller="User" asp-action="Edit">Edit</a>
+            <a role="button" class="btn btn-danger" asp-controller="User" asp-action="DeleteConfirm">Delete</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Luz</td>
+      <td>luz@gmail.com</td>
+      <td>222.222.222-02</td>
+      <td>
+        <div class="btn-group" role="group">
+            <a role="button" class="btn btn-primary" asp-controller="User" asp-action="Edit">Edit</a>
+            <a role="button" class="btn btn-danger" asp-controller="User" asp-action="DeleteConfirm">Delete</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Giovana</td>
+      <td>gi@gmail.com</td>
+      <td>333.333.333-03</td>
+      <td>
+        <div class="btn-group" role="group">
+            <a role="button" class="btn btn-primary" asp-controller="User" asp-action="Edit">Edit</a>
+            <a role="button" class="btn btn-danger" asp-controller="User" asp-action="DeleteConfirm">Delete</a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
